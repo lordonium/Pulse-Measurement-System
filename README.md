@@ -4,5 +4,6 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-# Pulse-Measurement-System
-We use a pair of Keithley 6221 and 2182A to measure Pulse Signals
+## Basic Overview
+While conducting an experiment you can use different techniques for measuring the signals. I was asked to code  **Keithley 2182A Nanovoltemeter** in conjunction with **6221 DC and AC Current Source** to perfom Pulse Delta and Delta measurements.  
+
