@@ -12,14 +12,15 @@ While conducting an experiment you can use different techniques for measuring th
 ## Theory
 Before explaining the software part lets tackle a little bit of theory.
 
-# Delta
+### Delta
 Delta voltage measurements use a current-reversal technique to cancel the
 effects of thermal EMFs in the voltmeter test lead connections. The simplest
 algorithm for a delta measurement uses the following 2-point source/measure
 process:
-	1. Source a positive current through the DUT and measure the voltage (V1).
-	2. Source a negative current through the DUT and measure the voltage (V2).
-	3. Calculate the delta reading as follows:
+
+	*1. Source a positive current through the DUT and measure the voltage (V1).
+	*2. Source a negative current through the DUT and measure the voltage (V2).
+	*3. Calculate the delta reading as follows:
 
 
 
