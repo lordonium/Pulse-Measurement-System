@@ -18,11 +18,9 @@ effects of thermal EMFs in the voltmeter test lead connections. The simplest
 algorithm for a delta measurement uses the following 2-point source/measure
 process:
 
-	*1. Source a positive current through the DUT and measure the voltage (V1).
-	*2. Source a negative current through the DUT and measure the voltage (V2).
-	*3. Calculate the delta reading as follows:
-
-
+1. Source a positive current through the DUT and measure the voltage (V1).
+2. Source a negative current through the DUT and measure the voltage (V2).
+3. Calculate the delta reading as follows:
 
 ## Authors
 
