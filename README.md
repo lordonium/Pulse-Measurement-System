@@ -21,6 +21,7 @@ process:
 1. Source a positive current through the DUT and measure the voltage (V1).
 2. Source a negative current through the DUT and measure the voltage (V2).
 3. Calculate the delta reading as follows:
+
 ![equation](http://latex.codecogs.com/gif.latex?delta&space;=&space;(V1-V2)/2)
 
 ## Authors
