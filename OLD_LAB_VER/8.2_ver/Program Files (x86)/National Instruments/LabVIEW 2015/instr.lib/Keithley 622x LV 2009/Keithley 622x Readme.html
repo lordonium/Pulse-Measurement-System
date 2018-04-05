@@ -1,0 +1,701 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40"
+xmlns:ns1="http://schemas.microsoft.com/office/2004/12/omml">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="Keithley%20622x%20Readme_files/filelist.xml">
+<link rel=Preview href="Keithley%20622x%20Readme_files/preview.wmf">
+<title>Instrument Driver Readme</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="place"/>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="City"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Authorized</o:Author>
+  <o:LastAuthor>Authorized</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>340</o:TotalTime>
+  <o:Created>2010-07-12T13:02:00Z</o:Created>
+  <o:LastSaved>2010-07-12T13:04:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>707</o:Words>
+  <o:Characters>4032</o:Characters>
+  <o:Company>Keithley Instruments, Inc.</o:Company>
+  <o:Lines>33</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4730</o:CharactersWithSpaces>
+  <o:Version>11.9999</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--p.MSONORMAL
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;}
+li.MSONORMAL
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;}
+div.MSONORMAL
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-fareast-theme-font:minor-fareast;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-fareast-theme-font:minor-fareast;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-fareast-theme-font:minor-fareast;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-fareast-theme-font:minor-fareast;}
+a:link
+	{mso-style-unhide:no;}
+span.MSOHYPERLINK
+	{mso-style-unhide:no;}
+a:visited
+	{mso-style-unhide:no;}
+span.MSOHYPERLINKFOLLOWED
+	{mso-style-unhide:no;}
+p
+	{mso-style-unhide:no;}
+span.HEADING1CHAR
+	{mso-style-unhide:no;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-theme-font:major-bidi;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.HEADING2CHAR
+	{mso-style-unhide:no;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-theme-font:major-bidi;
+	mso-themecolor:accent1;}
+span.HEADING3CHAR
+	{mso-style-unhide:no;}
+span.HEADING4CHAR
+	{mso-style-unhide:no;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-theme-font:major-bidi;
+	mso-themecolor:accent1;}
+span.MSONORMAL0
+	{mso-style-unhide:no;}
+.MSOCHPDEFAULT
+	{mso-default-props:yes;}
+table.MSONORMALTABLE
+	{mso-style-priority:99;
+	mso-style-qformat:yes;}
+table.MSOTABLEGRID
+	{mso-style-unhide:no;}
+
+ /* Font Definitions */
+ @font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1073741899 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;
+	font-weight:bold;}
+h4
+	{mso-style-link:"Heading 4 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#365F91;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:Cambria;
+	mso-ascii-font-family:Cambria;
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:Cambria;
+	mso-bidi-font-family:"Times New Roman";
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.msonormal0
+	{mso-style-name:msonormal;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:379986964;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1013048962 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-start-at:5;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<link rel=themeData href="ke26xx2%20Readme_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="ke26xx2%20Readme_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="5122"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2 align=center style='text-align:center'><span style='font-size:20.0pt;
+font-family:Arial'>Keithley Instruments, Inc. <br>
+622x DC <span class=GramE>And</span> AC Current Source Instrument Driver<br>
+Readme<o:p></o:p></span></h2>
+
+<h4><o:p>&nbsp;</o:p></h4>
+
+<h1>1. Overview</h1>
+
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0
+ style='margin-left:.3in;border-collapse:collapse;mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p>Instrument Driver Technology<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color'>
+  <p>LabVIEW Plug and Play (project-style)</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Manufacturer<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>Keithley Instruments, Inc.</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Supported Language(s)<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>LabVIEW</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Supported Model(s)<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>6220, 6221, 2182A</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Model(s) Tested<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>6221, 2182A</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Interface(s)<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>GPIB, Ethernet, RS232</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Firmware Revision(s) Tested<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>6221:<span style='mso-spacerun:yes'>&nbsp; </span>A04, 2812A<span
+  class=GramE>:<span style='mso-spacerun:yes'>&nbsp; </span>?</span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Certified<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>No</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>NI Supported<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>No</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Source Code Available<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>Yes</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Driver Revision<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>1.0.0.0</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Original Release Date<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p><a name="OLE_LINK2"></a><a name="OLE_LINK1"><span style='mso-bookmark:
+  OLE_LINK2'>07/12/2010</span></a></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12;mso-yfti-lastrow:yes'>
+  <td width=295 valign=top style='width:221.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color windowtext windowtext'>
+  <p>Current Revision Date<o:p></o:p></p>
+  </td>
+  <td width=295 valign=top style='width:221.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0in 5.4pt 0in 5.4pt;border-color:-moz-use-text-color &#13;&#10;windowtext windowtext -moz-use-text-color'>
+  <p>07/12/2010</p>
+  </td>
+ </tr>
+</table>
+
+<h1>2. Required Software</h1>
+
+<p style='margin-left:.25in'>Some software components need to be installed
+before using this instrument driver. The minimum versions of these components
+are listed below, and can be downloaded from the Download Site.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>VISA 3.0 or later</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>LabVIEW 8.0 or later</p>
+
+<p style='margin-left:.25in'>Refer to the <i>LabVIEW Help</i> for more
+information about software requirements. You access the <i>LabVIEW Help</i> by
+selecting <i>Help&raquo;Search the LabVIEW Help</i>. </p>
+
+<h1>3. Known Issues</h1>
+
+<p style='margin-left:.25in'>To report issues or provide feedback about this
+instrument driver, please send an email to <a
+href="mailto:applications@keithley.com">applications@keithley.com</a>. </p>
+
+<p style='margin-left:.25in'>There are no known issues with this driver.</p>
+
+<h1>4. Revision History</h1>
+
+<p style='margin-left:.25in'>The latest version of this instrument driver can
+be downloaded at the <a
+href="http://www.keithley.com/products/currentvoltage/voltagecurrentsourcing/?path=2602/Downloads#4">Keithley
+Instruments website</a>. </p>
+
+<p style='margin-left:.25in'><span class=Heading3Char><span style='font-size:
+13.0pt'>REV 1.0.0.0, 07/12/2010<o:p></o:p></span></span></p>
+
+<p style='margin-left:.25in'><b>Modified by</b>: Keithley Instruments Inc., <st1:city w:st="on"><st1:place
+w:st="on"><st1:City w:st="on">Cleveland</st1:City></st1:place></st1:city>, <st1:state w:st="on">OH</st1:state></p>
+
+<p style='margin-left:.25in'>Original release</p>
+
+<h1 style='margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .25in'><![if !supportLists]><span style='mso-fareast-font-family:
+Arial'><span style='mso-list:Ignore'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span></span><![endif]>Driver Usage</h1>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>Unzip the zipped distribution
+file.<span style='mso-spacerun:yes'>&nbsp; </span>This will result in a single
+top-level folder. <span style='mso-spacerun:yes'>&nbsp;</span>Place this folder
+in &lt;<span class=SpellE>LabVIEW</span> Installation Directory&gt;\<span
+class=SpellE>instr.lib</span> (if <span class=SpellE>LabVIEW</span> was
+installed in the default location, &lt;<span class=SpellE>LabVIEW</span>
+Installation Directory&gt; will be something like &#8216;C:\Program Files\National
+Instruments\<span class=SpellE>Labview</span> <span class=SpellE>x.x</span>&#8217;,
+where <span class=SpellE>x.x</span> refers to the <span class=SpellE>LabVIEW</span>
+version number.<span style='mso-spacerun:yes'>&nbsp; </span>Then restart <span
+class=SpellE>LabVIEW</span>, which will automatically generate the palettes).<span
+style='mso-spacerun:yes'>&nbsp; </span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>This driver makes heavy use of <span
+class=SpellE>typedefs</span> &#8211; almost every control / indicator on the <st1:place
+w:st="on"><span class=SpellE>VIs</span></st1:place> has a corresponding <span
+class=SpellE>typedef</span>.<span style='mso-spacerun:yes'>&nbsp; </span><span
+class=SpellE>Typedefs</span> are used because they are useful for parameter
+coercion (i.e. allowing the user to only enter values within a given parameter&#8217;s
+range and minimum increment/granularity size), and in addition provide some
+level of type safety.<span style='mso-spacerun:yes'>&nbsp; </span>To take
+advantage of the large number of <span class=SpellE>typedefs</span>, the
+suggested programming approach is to find the VI you need in the KE622x
+palette, place it on the block diagram, then right-click on the inputs to
+create the controls via the pop-up menu (this makes it trivial to add controls
+since you don&#8217;t have to search through a directory to find the <span
+class=SpellE>typedef</span> you are looking for).<span
+style='mso-spacerun:yes'>&nbsp; </span>Finally, note that the range and
+increment coercion provided via the <span class=SpellE>typedefs</span> only
+works if the inputs to a given VI are driven directly from a front panel
+control.<span style='mso-spacerun:yes'>&nbsp; </span>The implication here is
+that programmatically calculated values passed in to <span class=SpellE>VIs</span>
+<i style='mso-bidi-font-style:normal'>will not</i> be coerced by <span
+class=SpellE>LabVIEW</span> (e.g., suppose that the current level passed into a
+given <span class=SpellE>VIs</span> was not entered directly from a front panel
+control, but was instead a calculated value based on some other control&#8217;s
+setting).<span style='mso-spacerun:yes'>&nbsp; </span>For values that are
+out-of-range, the instrument will report an error.<span
+style='mso-spacerun:yes'>&nbsp; </span>However, the instrument <i
+style='mso-bidi-font-style:normal'>will not</i> report errors for values that
+violate the minimum increment size, but will instead silently coerce the value
+for you.<span style='mso-spacerun:yes'>&nbsp; </span>Every VI has one optional
+control to help deal with these situations, &#8216;Check for SCPI
+Errors?&#8217; <span style='mso-spacerun:yes'>&nbsp;</span>If &#8216;Check for
+SCPI Errors?&#8217; is True, an error query is sent to the instrument after the
+command is sent.<span style='mso-spacerun:yes'>&nbsp; </span>In addition, many <st1:place
+w:st="on"><span class=SpellE>VIs</span></st1:place>, particularly those that
+set analog values (and hence a have a continuous range), have a &#8216;Read
+Back Set Value(s)?&#8217; control. <span
+style='mso-spacerun:yes'>&nbsp;</span>If this control is set to True, the
+instrument will be queried for the actual <i style='mso-bidi-font-style:normal'>set</i>
+value, which can then be checked to see if the instrument performed any
+coercion (the set value is made available to the user via an output parameter
+of the specific VI).<span style='mso-spacerun:yes'>&nbsp; </span>Note that both
+controls default to True for &#8216;bullet-proofing&#8217;.<span
+style='mso-spacerun:yes'>&nbsp; </span>Obviously, querying the instrument for
+errors and coercions comes with a speed penalty.<span
+style='mso-spacerun:yes'>&nbsp; </span>So, it is recommended that user-created <st1:place
+w:st="on"><span class=SpellE>VIs</span></st1:place> have hooks to set these
+switch values to True or False.<span style='mso-spacerun:yes'>&nbsp;
+</span>During initial program debug, it is best to leave these at their
+defaults (True).<span style='mso-spacerun:yes'>&nbsp; </span>Once the user is
+satisfied that the VI is operating correctly, they can be set to False to
+speed-up program operation.<span style='mso-spacerun:yes'>&nbsp; </span></p>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:.25in'>Finally, it is suggested that you
+only use the <st1:place w:st="on"><span class=SpellE>VIs</span></st1:place>
+that are in the palette set, at least when you are starting out.<span
+style='mso-spacerun:yes'>&nbsp; </span>These are typically high-level <st1:place
+w:st="on"><span class=SpellE>VIs</span></st1:place> that set a number of
+parameters in the instrument via a single VI and an input cluster control.<span
+style='mso-spacerun:yes'>&nbsp; </span>Refer to the &#8216;Examples&#8217; <span
+class=GramE>palette to see how these <st1:place w:st="on"><span class=SpellE>VIs</span></st1:place>
+are</span> used.<span style='mso-spacerun:yes'>&nbsp; </span></p>
+
+<p class=MsoNormal style='margin-left:22.5pt'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='margin-left:22.5pt'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
